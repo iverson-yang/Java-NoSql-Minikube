@@ -27,5 +27,5 @@ Env: Windows 10 Pro
       ```
       minikube service mongodb
       ```
-      Them we get external URL http://127.0.0.1:<port>, in my case it's http://127.0.0.1:59619
+      Then we get external URL http://127.0.0.1: &lt;port&gt;, in my case it's http://127.0.0.1:59619
       
