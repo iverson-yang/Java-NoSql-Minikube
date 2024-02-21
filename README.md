@@ -18,3 +18,14 @@ Env: Windows 10 Pro
       ```
       minikube image load mongo
       ```
+   3. Deploy MongoDB in Minikube  
+      ```
+      kubectl create deployment mongodb --image=mongo --port=27017
+      kubectl expose deployment mongodb --type=NodePort --port=27017 --target-port=27017
+      ```
+   4. Get the external IP address of the “mongodb” Service, run following command:  
+      ```
+      minikube service mongodb
+      ```
+      Them we get external URL http://127.0.0.1:<port>, in my case it's http://127.0.0.1:59619
+      
